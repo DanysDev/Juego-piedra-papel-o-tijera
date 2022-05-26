@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Lobster&family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;500;700&family=Shadows+Into+Light&display=swap');
+
+
+:root {
+--morbius: #338cbb;
+--text_principal: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--morbius);
+    color: var(--text_principal);
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 90vh;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.title {
+    font-size: 5rem;
+}
+
+.img__machine {
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.container__btn {
+    display: flex;
+    height: 250px;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 20px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.container__btn-option {
+    display: flex;
+    gap: 1rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    transition: .4s;
+}
+
+.container__btn-option img {
+    min-width: 100%;
+    height: auto;
+}
+
+.container__btn-option:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+@media(max-width: 800px){
+    .container{
+        min-width: 300px;
+        gap: 32px;
+    }
+    .title {
+        padding-top: 30px;
+        font-size: 3rem;
+    }
+    .container__btn {
+        margin: 0 auto;
+    }
+
+    .container__btn-option {
+        width: 100px;
+    }
+}
